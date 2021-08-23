@@ -98,8 +98,8 @@ public class PrinterWebSocketService implements WebSocketServiceInterface {
 
             server.onDataReceived(getChannel(), gson.toJson(new PrintResult(0, printDocument.getId(), "Success")));
         } catch (Exception e) {
-            logger.error("Document Print Error, deleting downloaded document");
-            DocumentService.deleteFileFromUrl(printDocument.getUrl());
+            logger.error("Document Print Error.");
+            //DocumentService.deleteFileFromUrl(printDocument.getUrl());
 
             if (notificationListener != null) {
                 notificationListener.notify("Printing Error " + printDocument.getType(), e.getMessage(), TrayIcon.MessageType.ERROR);
