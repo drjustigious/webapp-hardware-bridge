@@ -48,8 +48,6 @@ public class PrintDocument {
                 ", url='" + url + '\'' +
                 ", id='" + id + '\'' +
                 ", qty=" + qty +
-                ", file_content='" + file_content + '\'' +
-                ", raw_content='" + raw_content + '\'' +
                 ", extras=" + extras +
                 '}';
     }
