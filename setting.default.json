@@ -22,10 +22,8 @@
     "url": "wss://127.0.0.1:22212"
   },
   "printers": {
-    "LABEL": "KM-200",
-    "INVOICE": "KM-200"
+    "LABEL1": "PLEASE-CHANGE-ME",
+    "INVOICE": "PLEASE-CHANGE-ME"
   },
-  "serials": {
-    "WEIGH": "COM5"
-  }
+  "serials": {}
 }
