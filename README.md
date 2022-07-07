@@ -2,9 +2,9 @@
 
 ## Security Warning
 
-Version <= 0.13.0 are known to be affected by log44 vulnerabilities (CVE-2021-44228, CVE-2021-45105, CVE-2021-45046).
+The Nordhealth fork's releases <= 0.13.2 are known to be affected by *log4shell* vulnerabilities (CVE-2021-44228, CVE-2021-45105, CVE-2021-45046).
 
-Existing users are strongly recommended to update to 0.14.0 or above as soon as possible.
+Existing users are strongly encouraged to update to Nordhealth release 0.13.3 or above as soon as possible.
 
 ## Introduction
 
