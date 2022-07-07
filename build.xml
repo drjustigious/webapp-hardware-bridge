@@ -1,0 +1,54 @@
+<!-- MacOS installer bundling script to be run by Apache Ant.
+
+    Requirements:
+    - Install JDK 1.8.x.
+        - https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html
+        - You'll need an Oracle account for this.
+    - Install ant.
+        - $> brew install ant
+    - Run it.
+        - $> ant bundle
+-->
+<project
+        name="WebApp Hardware Bridge"
+        default="default"
+        basedir="."
+        xmlns:fx="javafx:com.sun.javafx.tools.ant">
+
+    <property
+        name="JAVA_HOME"
+        value="/Library/Java/JavaVirtualMachines/jdk1.8.0_331.jdk/Contents/Home"/>
+    <property name="OUTPUT_DIR" value="dist-macos"/>
+
+    <target name="bundle">
+        <!-- <fx:platform basedir="${JAVA_HOME}"/> -->
+        <taskdef resource="com/sun/javafx/tools/ant/antlib.xml"
+            uri="javafx:com.sun.javafx.tools.ant"
+            classpath=".:${JAVA_HOME}/lib/ant-javafx.jar"/>
+        <fx:deploy
+                outdir="${OUTPUT_DIR}"
+                outfile="webapphardwarebridge"
+                nativeBundles="dmg">
+            <fx:application
+                name="WebApp Hardware Bridge"
+                mainClass="tigerworkshop.webapphardwarebridge.Server"/>
+            <fx:resources>
+                <fx:fileset
+                    type="jar"
+                    dir="out/artifacts/webapp_hardware_bridge_jar"
+                    includes="*.jar"/>
+                <fx:fileset
+                    type="data"
+                    dir="out/artifacts/webapp_hardware_bridge_jar"
+                    includes="*.json"/>
+            </fx:resources>
+            <fx:info title="WebApp Hardware Bridge MacOS installer"/>
+            <fx:secondaryLauncher
+                mainClass="tigerworkshop.webapphardwarebridge.Server"
+                name="Server"/>
+            <fx:secondaryLauncher
+                mainClass="tigerworkshop.webapphardwarebridge.Configurator"
+                name="Configurator"/>
+        </fx:deploy>
+    </target>
+</project>
