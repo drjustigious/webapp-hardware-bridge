@@ -12,17 +12,17 @@
 	<string>Jussi Tikkanen</string>
 	<key>BundledFiles</key>
 	<array>
-		<string>/Users/jussi/IdeaProjects/webapp-hardware-bridge/mac-os-installer/jar</string>
-		<string>/Users/jussi/IdeaProjects/webapp-hardware-bridge/mac-os-installer/jre</string>
-		<string>/Users/jussi/IdeaProjects/webapp-hardware-bridge/mac-os-installer/WebApp Hardware Bridge Configurator.app</string>
-		<string>/Users/jussi/IdeaProjects/webapp-hardware-bridge/mac-os-installer/WebApp Hardware Bridge Server.app</string>
+		<string>../jar</string>
+		<string>../jre</string>
+		<string>../WebApp Hardware Bridge Configurator.app</string>
+		<string>../WebApp Hardware Bridge Server.app</string>
 	</array>
 	<key>Creator</key>
 	<string>Platypus-5.3</string>
 	<key>DeclareService</key>
 	<false/>
 	<key>Destination</key>
-	<string>/Users/jussi/Desktop/Application.app</string>
+	<string>/Users/Shared/Application.app</string>
 	<key>DevelopmentVersion</key>
 	<false/>
 	<key>DocIconPath</key>
@@ -58,7 +58,7 @@
 	<key>ScriptArgs</key>
 	<array/>
 	<key>ScriptPath</key>
-	<string>/Users/jussi/IdeaProjects/webapp-hardware-bridge/mac-os-installer/installer.sh</string>
+	<string>../installer.sh</string>
 	<key>StatusItemDisplayType</key>
 	<string>Text</string>
 	<key>StatusItemIcon</key>
