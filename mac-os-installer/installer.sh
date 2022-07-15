@@ -1,7 +1,7 @@
 #! /bin/zsh
 
 INSTALL_DIR="/Users/Shared/webapp-hardware-bridge"
-USER_DIR="/Users/${USER}/WebAppHardwareBridge"
+USER_DIR="/Applications"
 
 echo "Acting as user ${USER}."
 echo "Installing WebApp Hardware Bridge to ${INSTALL_DIR}."
