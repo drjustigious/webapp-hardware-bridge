@@ -5,13 +5,11 @@ USER_DIR="/Applications"
 
 echo "Acting as user ${USER}."
 echo "Installing WebApp Hardware Bridge to ${INSTALL_DIR}."
-echo "Placing launchers in ${USER_DIR}."
 
 pwd
 ls -l
 
 echo "Copying application files..."
-rm -fr ${INSTALL_DIR}/jar
 mkdir -p ${INSTALL_DIR}
 cp -R jar ${INSTALL_DIR}
 
@@ -20,7 +18,7 @@ rm -fr ${INSTALL_DIR}/jre
 mkdir -p ${INSTALL_DIR}
 cp -R jre ${INSTALL_DIR}
 
-echo "Setting up launchers..."
+echo "Placing launchers in ${USER_DIR}..."
 mkdir -p ${USER_DIR}
 cp -R *.app ${USER_DIR}
 open ${USER_DIR}
