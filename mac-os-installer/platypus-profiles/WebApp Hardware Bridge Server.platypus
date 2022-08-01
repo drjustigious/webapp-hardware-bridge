@@ -17,7 +17,7 @@
 	<key>DeclareService</key>
 	<false/>
 	<key>Destination</key>
-	<string>/Users/Shared/Application.app</string>
+	<string>/Users/jussi/Desktop/Application.app</string>
 	<key>DevelopmentVersion</key>
 	<false/>
 	<key>DocIconPath</key>
@@ -47,7 +47,7 @@
 	<key>PromptForFileOnLaunch</key>
 	<false/>
 	<key>RemainRunning</key>
-	<true/>
+	<false/>
 	<key>RunInBackground</key>
 	<false/>
 	<key>ScriptArgs</key>
@@ -55,7 +55,7 @@
 		<string>server</string>
 	</array>
 	<key>ScriptPath</key>
-	<string>../launcher.sh</string>
+	<string>/Users/jussi/IdeaProjects/webapp-hardware-bridge/mac-os-installer/launcher.sh</string>
 	<key>StatusItemDisplayType</key>
 	<string>Text</string>
 	<key>StatusItemIcon</key>
